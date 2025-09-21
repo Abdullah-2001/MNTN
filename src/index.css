@@ -1,0 +1,74 @@
+@import "tailwindcss";
+
+/* Chronical display font */
+
+@font-face {
+    font-family: 'chronical-regular';
+    src: url(../public/fonts/chronicle-display/Chronicle\ Display\ Black.otf);
+}
+
+@font-face {
+    font-family: 'chronical-semibold';
+    src: url(../public/fonts/chronicle-display/Chronicle\ Display\ Semibold.otf);
+}
+
+/* Gilroy fony */
+
+@font-face {
+    font-family: 'gilroy-medium';
+    src: url(../public/fonts/gilroy-bold/Gilroy-Medium.ttf);
+}
+
+@font-face {
+    font-family: 'gilroy-bold';
+    src: url(../public/fonts/gilroy-bold/Gilroy-Bold.ttf);
+}
+
+body {
+    background: #0B1D26;
+    min-height: 100vh;
+    color: white;
+}
+
+.hero-bg {
+    background: url('../public/images/hero-bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center -500px;
+    /* min-height: 100vh; */
+}
+
+.navbar-links {
+    font-family: 'gilroy-bold';
+}
+
+.title-font {
+    font-family: 'chronical-semibold';
+}
+
+.text-font {
+    font-family: 'gilroy-bold';
+}
+
+.scroll-down {
+    animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+        transform: translateY(0);
+    }
+
+    40% {
+        transform: translateY(-10px);
+    }
+
+    60% {
+        transform: translateY(-5px);
+    }
+}
